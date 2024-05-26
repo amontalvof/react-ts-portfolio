@@ -1,12 +1,12 @@
-type TMenuIconProps = {
+interface IMenuIconProps {
     style?: React.CSSProperties;
     color?: string;
     width?: string;
     height?: string;
     onClick?: () => void;
-};
+}
 
-const MenuIcon = (props: TMenuIconProps) => {
+const MenuIcon = (props: IMenuIconProps) => {
     const { style, color, width, height, onClick } = props;
     return (
         <svg

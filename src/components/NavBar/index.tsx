@@ -9,7 +9,7 @@ import { menuLinks } from '../../constants';
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const isLarge = useMediaQuery('(min-width: 768px)');
+    const isLarge = useMediaQuery('(min-width: 769px)');
     const iconStyle = !isLarge
         ? { display: 'inline-flex' }
         : { display: 'none' };

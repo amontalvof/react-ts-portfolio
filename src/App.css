@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 body {
     min-height: 100vh;
-    background: url('./assets/images/bg.jpg') no-repeat;
+    background: linear-gradient(
+            to right bottom,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url('./assets/images/bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }

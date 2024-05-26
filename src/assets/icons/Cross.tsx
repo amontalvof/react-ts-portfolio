@@ -1,12 +1,12 @@
-type TCrossIconProps = {
+interface ICrossIconProps {
     style?: React.CSSProperties;
     color?: string;
     width?: string;
     height?: string;
     onClick?: () => void;
-};
+}
 
-const CrossIcon = (props: TCrossIconProps) => {
+const CrossIcon = (props: ICrossIconProps) => {
     const { style, color, width, height, onClick } = props;
     return (
         <svg
