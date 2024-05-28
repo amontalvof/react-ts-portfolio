@@ -10,6 +10,7 @@ import { LeftSection } from './styles';
 const Hello = () => {
     return (
         <StyledSection
+            noPadding
             row
             breakpoints={{
                 md: '768px',

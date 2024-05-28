@@ -18,8 +18,8 @@ function App() {
                     <RenderIf isTrue={isLarge}>
                         <BackgroundAnimation />
                     </RenderIf>
-                    {/* <Projects /> */}
                 </StyledSection>
+                <Projects />
             </main>
         </>
     );

@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import shouldForwardProp from '../../helpers/shouldForwardProp';
-import { DARK_BLUE, LIGHT_BLUE, WHITE, WHITE_RGBA } from '../../constants';
-
-interface IBreakpoints {
-    md?: string;
-    sm?: string;
-}
+import {
+    DARK_BLUE,
+    LIGHT_BLUE,
+    WHITE,
+    WHITE_RGBA,
+} from '../../constants/colors';
+import { IBreakpoints } from '../../types/breakpoints';
 
 interface IStyledSectionProps {
     grid?: boolean;
     row?: boolean;
+    noPadding?: boolean;
     breakpoints?: IBreakpoints;
 }
 
@@ -18,7 +20,7 @@ export const StyledSection = styled.section.withConfig({
 })<IStyledSectionProps>`
     display: ${(props) => (props.grid ? 'grid' : 'flex')};
     flex-direction: ${(props) => (props.row ? 'row' : 'column')};
-    padding: 50px;
+    padding: ${(props) => (props.noPadding ? '0' : '50px')};
     margin: 0 auto;
     max-width: 1200px;
     box-sizing: content-box;
@@ -26,12 +28,12 @@ export const StyledSection = styled.section.withConfig({
     overflow: hidden;
     grid-template-columns: 1fr 1fr;
     @media ${(props) => `(max-width: ${props.breakpoints?.md})`} {
-        padding: 40px;
+        padding: ${(props) => (props.noPadding ? '0' : '40px')};
         flex-direction: column;
     }
 
     @media ${(props) => `(max-width: ${props.breakpoints?.sm})`} {
-        padding: 30px;
+        padding: ${(props) => (props.noPadding ? '0' : '30px')};
         flex-direction: column;
     }
 `;
@@ -58,19 +60,19 @@ export const StyledSectionTitle = styled.h2.withConfig({
     background-clip: text;
     -webkit-text-fill-color: ${WHITE};
     margin-bottom: 16px;
-    padding: ${(props) => (props.main ? '100px 0 20px' : '0')};
+    padding: ${(props) => (props.main ? '100px 0 20px' : '50px 0 20px')};
 
     @media ${(props) => `(max-width: ${props.breakpoints?.md})`} {
         font-size: ${(props) => (props.main ? '50px' : '30px')};
         margin-bottom: 12px;
-        padding: ${(props) => (props.main ? '100px 0 16px' : '0')};
+        padding: ${(props) => (props.main ? '100px 0 16px' : '50px 0 16px')};
     }
 
     @media ${(props) => `(max-width: ${props.breakpoints?.sm})`} {
         line-height: 40px;
         font-size: ${(props) => (props.main ? '40px' : '20px')};
         margin-bottom: 8px;
-        padding: ${(props) => (props.main ? '100px 0 8px' : '0')};
+        padding: ${(props) => (props.main ? '100px 0 8px' : '50px 0 8px')};
     }
 `;
 

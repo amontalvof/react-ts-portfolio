@@ -5,9 +5,10 @@ import { StyledAnchor, StyledHeader, StyledNav } from './styles';
 import MenuIcon from '../../assets/icons/Menu';
 import CrossIcon from '../../assets/icons/Cross';
 import RenderIf from '../RenderIf';
-import { menuLinks } from '../../constants';
+import { menuLinks } from '../../constants/menu';
 
 const NavBar = () => {
+    const [selected, setSelected] = useState('hello');
     const [isOpen, setIsOpen] = useState(false);
     const isLarge = useMediaQuery('(min-width: 769px)');
     const iconStyle = !isLarge
@@ -19,6 +20,7 @@ const NavBar = () => {
     };
 
     const onClickToElement = (element: string) => {
+        setSelected(element);
         const scrollType = {
             duration: 1000,
             delay: 50,
@@ -43,6 +45,7 @@ const NavBar = () => {
                         key={link}
                         href={`#${link}`}
                         index={index}
+                        isActive={selected === link}
                         onClick={() => {
                             onClickToElement(link);
                         }}

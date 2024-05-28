@@ -6,6 +6,7 @@ const exclusions = [
     'noPadding',
     'breakpoints',
     'main',
+    'isActive',
 ];
 
 const shouldForwardProp = (prop: string) => !exclusions.includes(prop);
