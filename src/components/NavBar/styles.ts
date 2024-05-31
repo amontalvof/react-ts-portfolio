@@ -57,7 +57,7 @@ export const StyledNav = styled.nav.withConfig({
         top: 100%;
         left: 0;
         width: 100%;
-        height: ${(props) => (props.isOpen ? '17.7rem' : '0')};
+        height: ${(props) => (props.isOpen ? '18.7rem' : '0')};
         background-color: ${BLACK_RGBA};
         backdrop-filter: blur(50px);
         box-shadow: 0 0.5rem 1rem ${BLACK_RGBA};

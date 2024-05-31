@@ -1,7 +1,7 @@
 export const education = [
     {
         id: 'Master',
-        title: 'Master of Science in Electronics Engineering',
+        title: 'Master of Science in Electronics Engineering, Deep Learning and Computer Vision.',
         place: 'Technological Institute of Celaya. Celaya, Mexico',
         date: 'Jan 2019 - May 2021',
         description:
@@ -13,6 +13,6 @@ export const education = [
         place: 'José Antonio Echeverría Technological University of Havana-Cujae. Havana, Cuba',
         date: 'Sep 2011 - Jun 2016',
         description:
-            'Thesis: “Vibration measurement for leak detection in water distribution networksˮ. Focus on digital signal processing using Python in a Raspberry Pi.',
+            'Thesis: “Vibration measurement for leak detection in water distribution networks ˮ. Focus on digital signal processing using Python in a Raspberry Pi.',
     },
 ];

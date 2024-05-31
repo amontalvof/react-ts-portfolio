@@ -7,7 +7,7 @@ import {
 } from '../../constants/colors';
 
 export const Box = styled(Tilt)`
-    width: 400px;
+    width: 440px;
     height: 400px;
     border-radius: 10px;
     color: ${WHITE};
@@ -23,6 +23,10 @@ export const Box = styled(Tilt)`
 export const StyledTitle = styled.h2`
     font-size: 1.5em;
     display: block;
+
+    @media (max-width: 420px) {
+        font-size: 1em;
+    }
 `;
 
 export const StyledDate = styled.h4`
@@ -35,7 +39,7 @@ export const StyledPlace = styled.h4`
     font-size: 1em;
     display: block;
     color: ${DARK_WHITE_RGBA};
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 `;
 
 export const Description = styled.p`
