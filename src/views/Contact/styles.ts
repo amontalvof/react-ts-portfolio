@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { WHITE_RGBA, WHITE_TRANSPARENT } from '../../constants/colors';
+import { BLACK_RGBA, WHITE_RGBA } from '../../constants/colors';
 
 export const Footer = styled.footer`
     position: relative;
     width: 100%;
-    background: ${WHITE_TRANSPARENT};
-    backdrop-filter: blur(1px);
+    background: ${BLACK_RGBA};
+    backdrop-filter: blur(50px);
     min-height: 200px;
     padding: 20px 50px;
     display: flex;
