@@ -28,7 +28,7 @@ export const experience = [
     },
     {
         id: 'ETECSA',
-        title: 'Full-stack Java Developer',
+        title: 'Full-Stack Java Developer',
         company: 'ETECSA · Full-time',
         date: 'Sep 2016 - Dec 2018',
         place: 'Havana, Cuba · On-site',
